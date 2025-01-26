@@ -1,6 +1,6 @@
 package org.example.solid.srp;
 
-import org.example.solid.Customer;
+import org.example.solid.isp.Customer;
 
 public class NotificationService {
 
