@@ -1,4 +1,11 @@
 package org.example.solid;
 
-public class DeliveryOrder {
+import org.example.solid.lsp.ShippingCostCalculator;
+
+public class DeliveryOrder extends Order implements ShippingCostCalculator {
+
+    @Override
+    public double calculateShippingCost() {
+        return price + SHIPPING_COST;
+    }
 }
