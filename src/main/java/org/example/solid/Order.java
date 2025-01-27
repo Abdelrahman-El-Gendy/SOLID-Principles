@@ -10,4 +10,7 @@ public class Order {
         return name;
     }
 
+    public Double getPrice() {
+        return price;
+    }
 }

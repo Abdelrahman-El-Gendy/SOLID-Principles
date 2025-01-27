@@ -14,7 +14,7 @@ public class PaymentProcessor {
 
     public void processPayment(Order order) {
         System.out.println("Processing Payment for Order: " + order.getName());
-        System.out.println("Issuing Payment for amount: " + order.getTotalPrice());
-        paymentStrategy.processPayment(order.getTotalPrice());
+        System.out.println("Issuing Payment for amount: " + order.getPrice());
+        paymentStrategy.processPayment(order.getPrice());
     }
 }
